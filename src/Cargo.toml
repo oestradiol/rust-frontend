@@ -1,0 +1,14 @@
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package]
+name = "rust-frontend"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "rust-frontend"
+path = "app/main.rs"
+
+[dependencies]
+yew = { version = "^0.20", features = ["csr"] }
+#yew-router = "^0.18"
