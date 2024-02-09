@@ -1,3 +1,5 @@
+#!forbid(unsafe_code)
+
 use yew::prelude::*;
 use yew::Renderer;
 
