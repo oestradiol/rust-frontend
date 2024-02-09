@@ -3,7 +3,7 @@ use yew::prelude::*;
 #[function_component(Nav)]
 pub fn nav() -> Html {
     html! {
-        <div class="navbar bg-neutral">
+        <div class="navbar">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost btn-circle">

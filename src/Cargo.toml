@@ -10,5 +10,5 @@ name = "rust-frontend"
 path = "app/main.rs"
 
 [dependencies]
-yew = { version = "^0.20", features = ["csr"] }
-#yew-router = "^0.18"
+yew = { version = "^0.21", features = ["csr"] }
+yew-router = "^0.18"
