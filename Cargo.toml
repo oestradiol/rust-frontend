@@ -1,6 +1,0 @@
-[workspace]
-resolver = "2"
-members = ["src"]
-default-members = ["src"]
-
-[workspace.dependencies]
