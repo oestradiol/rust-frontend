@@ -1,19 +1,6 @@
-#!forbid(unsafe_code)
-
-use yew::prelude::*;
-use yew::Renderer;
-
-mod router;
-pub mod routes;
-
-pub mod components;
-mod layout;
+use web::App;
 
 fn main() {
-    Renderer::<App>::new().render();
+  wasm_logger::init(wasm_logger::Config::default());
+  yew::Renderer::<App>::new().hydrate();
 }
-
-#[inline]
-#[allow(unused_braces)]
-#[function_component(App)]
-fn layout() -> Html { layout::layout() }

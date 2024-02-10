@@ -1,14 +1,15 @@
 {
-    "name": "rust-frontend",
+    "name": "frontend",
     "version": "0.1.0",
-    "license": "UNLICENSED",
+    "license": "LGPL-3.0-or-later",
     "scripts": {
         "build-tailwind-dev": "cross-env postcss src/app/**/*.css -o src/styles.css",
-        "dev": "yarn build-tailwind-dev && trunk serve",
+        "build-dev": "yarn build-tailwind-dev && trunk build",
+        "dev": "cargo run",
 
-        "build-tailwind-prod": "cross-env NODE_ENV=production postcss src/app/**/*.css -o src/styles.css --minify",
-        "build": "yarn build-tailwind-prod && trunk build --release",
-        "start": "trunk serve --release"
+        "build-tailwind": "cross-env NODE_ENV=production postcss src/app/**/*.css -o src/styles.css --minify",
+        "build": "yarn build-tailwind && trunk build --release",
+        "start": "cargo run --release"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.13",

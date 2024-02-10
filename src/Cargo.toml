@@ -1,14 +1,18 @@
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [package]
-name = "rust-frontend"
+name = "web"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "rust-frontend"
+name = "web"
 path = "app/main.rs"
 
+[lib]
+path = "app/lib.rs"
+
 [dependencies]
-yew = { version = "^0.21", features = ["csr"] }
-yew-router = "^0.18"
+yew = { version = "^0.21", features = ["csr", "hydration"] }
+wasm-logger = "^0.2"
+yew-router = { version = "0.18.0" }

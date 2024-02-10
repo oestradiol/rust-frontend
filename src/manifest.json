@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/web-manifest.json",
-    "name": "Yew Tailwind Starter",
+    "name": "Yew Tailwind Template",
     "short_name": "yew-tailwindcss",
     "icons": [
         {
