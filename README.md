@@ -1,2 +1,2 @@
-# rust-frontend
+# frontend
 My Rust Frontend Template

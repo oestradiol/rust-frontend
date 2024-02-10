@@ -1,15 +1,15 @@
-use yew::{Html, html};
-use yew_router::BrowserRouter;
+use yew::{function_component, Html, html};
+use crate::AppRouter;
 use crate::components::Nav;
-use crate::router::AppRouter;
 
+#[function_component(Layout)]
 pub fn layout() -> Html {
-    html! {
-        <BrowserRouter>
-            <Nav />
-            <main>
-                <AppRouter />
-            </main>
-        </BrowserRouter>
+  html! {
+      <>
+        <Nav />
+        <main>
+            <AppRouter />
+        </main>
+      </>
     }
 }
